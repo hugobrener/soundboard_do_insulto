@@ -22,3 +22,20 @@ while (contador < listaDeTeclas.length) {
     contador += 1
     
 }
+
+document.addEventListener("keydown", function(e) {
+    if (e.ctrlKey && e.key === "0"){
+        document.getElementById('som_tecla_comecou').play()
+    } else if (e.ctrlKey && e.key === "1"){
+        document.getElementById('som_tecla_uma-maquina').play()
+    } else if (e.ctrlKey && e.key === "2"){
+        document.getElementById('som_tecla_risada').play()
+    }else if (e.ctrlKey && e.key === "3"){
+        document.getElementById('som_tecla_para').play()
+    }else if (e.ctrlKey && e.key === "4"){
+        document.getElementById('som_tecla_fodace').play()
+    }
+    else {
+        console.log('num deu gau')
+    }
+})
